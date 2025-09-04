@@ -1,0 +1,373 @@
+/* Algemene stijl */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  color: #22223b;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Navigatie */
+nav {
+  background: #22223b;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background: #4a4e69;
+  color: #ffcc00;
+}
+
+/* Header */
+header#home {
+  text-align: center;
+  background: #4a4e69;
+  color: #fff;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 24px rgba(74,78,105,0.10);
+  border: 5px solid #ffcc00;
+  padding: 3rem 1rem;
+}
+
+header#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  color: #ffcc00;
+}
+
+header#home p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  opacity: 0.95;
+  color: #ffcc00;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(74,78,105,0.08);
+}
+
+/* Secties */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  color: #4a4e69;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #ffcc00;
+  padding-left: 12px;
+  letter-spacing: 1px;
+}
+
+/* Over mij */
+#overmij p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+#overmij img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(74,78,105,0.12);
+  max-width: 100%;
+  border: 4px solid #ffcc00;
+}
+
+/* Skills */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#skills ul li {
+  background: #e0e7ff;
+  color: #22223b;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(74,78,105,0.07);
+  transition: background 0.2s;
+}
+
+#skills ul li:hover {
+  background: #ffcc00;
+  color: #4a4e69;
+}
+
+/* Projecten */
+#projecten {
+  background: #f8fafc;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(74,78,105,0.07);
+}
+
+#projecten div {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(74,78,105,0.06);
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border-left: 6px solid #e0e7ff;
+}
+
+#projecten div:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(74,78,105,0.13);
+  border-left: 6px solid #ffcc00;
+}
+
+#projecten h3 {
+  margin-top: 0;
+  color: #22223b;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#projecten p {
+  margin: 0 0 1rem 0;
+  color: #4a4e69;
+  font-size: 1.05rem;
+}
+
+#projecten a {
+  display: inline-block;
+  background: #4a4e69;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 18px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+#projecten a:hover {
+  background: #ffcc00;
+  color: #22223b;
+}
+
+#projecten img {
+  display: block;
+  margin: 1.2rem auto 0 auto;
+  max-width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(74,78,105,0.10);
+  border: 3px solid #e0e7ff;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+#projecten div:hover img {
+  transform: scale(1.03);
+  border-color: #ffcc00;
+}
+
+/* Contact */
+#contact {
+  background: #f8fafc;
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(74,78,105,0.07);
+  max-width: 500px;
+  margin: 2.5rem auto;
+  text-align: left;
+  animation: fadeInUp 0.8s ease both;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+  color: #22223b;
+}
+
+#contact a {
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.2s;
+  background-color: #ffcc00;
+}
+
+#contact a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* CV knop */
+.cv-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #4a4e69;
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 22px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cv-btn:hover {
+  background: #ffcc00;
+  color: #22223b;
+}
+
+/* Github */
+.github {
+  text-align: center;
+  padding: 2rem;
+  background: #22223b;
+  border-radius: 20px;
+}
+
+.github h2 {
+  color: #fff;
+}
+
+.github p {
+  color: #c9d1d9;
+}
+
+.github a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: #22223b;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.github a:hover {
+  background: #e6b800;
+}
+
+/* Animaties */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  main {
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  header#home {
+    padding: 2rem 1rem 1.5rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  header#home h1 {
+    font-size: 1.8rem;
+  }
+
+  header#home p {
+    font-size: 1rem;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #projecten div {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #e0e7ff;
+  }
+
+  #projecten a {
+    padding: 6px 14px;
+    font-size: 0.95rem;
+  }
+
+  #contact {
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #22223b;
+  color: #fff;
+  font-size: 0.9rem;
+  border-top: 1px solid #44475a;
+}
+footer p {
+  margin: 0;
+}
+/* Einde stijl */
